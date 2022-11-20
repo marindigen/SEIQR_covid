@@ -137,7 +137,8 @@ Once the rules have been applied we store the new state of the cell in the `new_
 
 To visualize our results we produce an animation representing the spread of the virus. We achieve this by plotting the matrix after every iteration and store these images in a list. Then we use the `ArtistAnimation` function from the `matplotlib.animation` library. We feed in the list of images and specify that for how long should each image show. Finally to make the animation easier to follow we specify a colourmap that matches each state value to a distinct colour.
 
-![](https://user-images.githubusercontent.com/100027326/202925870-571ea8e9-98fb-47ca-b769-c2a8bf99819b.mp4)
+![animation_example1](https://user-images.githubusercontent.com/100027326/202932081-a86a5704-2a0c-4cb7-9e45-e4b96ef784a3.gif)
+
 
 As an addition we plot the progression of the states over time, this makes it easier to analyse and compare the different initial states and their consequences.
 
@@ -195,7 +196,7 @@ Taking the idea further we have considered the case of 2 cities and have establi
 
 - In order to make cities symmetrical, we have considered the case for odd and even values of grid_size. Moreover, to accurately construct the map, we have split the initial_state matrix into 3 arrays and used `np.concatenate()` function to augment them.
 
-![](https://user-images.githubusercontent.com/100027326/202926846-9bf58d8d-0986-48b7-9cbb-ebe6641f5716.mp4)
+![barrier](https://user-images.githubusercontent.com/100027326/202932286-e6d6c67b-00da-4396-8e18-355676257292.gif)
 
 ![](https://user-images.githubusercontent.com/100027326/202926869-cda9de46-a338-48a8-a300-986b136e3ea2.png)
 
